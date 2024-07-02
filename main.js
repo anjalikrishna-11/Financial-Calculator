@@ -9,16 +9,6 @@ function validateInput(...inputs) {
     return inputs.every(input => !isNaN(input) && input !== '');
 }
 
-// Import functions from the calculation modules
-import { calculateInterest } from './interestRate.js';
-import { calculateLoanPayment } from './loanPayment.js';
-import { calculateInvestmentReturn } from './investmentReturn.js';
-
-// Function to validate inputs: checks if all inputs are numbers and not empty
-function validateInput(...inputs) {
-    return inputs.every(input => !isNaN(input) && input !== '');
-}
-
 // Event listener for the Interest Rate Calculation button
 document.getElementById('calculateInterest').addEventListener('click', () => {
     const principal = parseFloat(document.getElementById('interestPrincipal').value);
