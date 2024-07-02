@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Financial Calculator</h1>
@@ -14,14 +15,14 @@
         <input type="number" id="interestRate" placeholder="Rate">
         <input type="number" id="interestTime" placeholder="Time">
         <button id="calculateInterest">Calculate Interest</button>
-        <p id="interestResult"></p>
+        <p id="interestResult" class="result"></p>
 
         <h2>Loan Payment Calculation</h2>
         <input type="number" id="loanPrincipal" placeholder="Principal">
         <input type="number" id="loanRate" placeholder="Annual Rate">
         <input type="number" id="loanNumberOfPayments" placeholder="Number of Payments">
         <button id="calculateLoanPayment">Calculate Payment</button>
-        <p id="loanResult"></p>
+        <p id="loanResult" class="result"></p>
 
         <h2>Investment Return Calculation</h2>
         <input type="number" id="investmentPrincipal" placeholder="Principal">
@@ -29,9 +30,10 @@
         <input type="number" id="investmentTimesCompounded" placeholder="Times Compounded per Year">
         <input type="number" id="investmentYears" placeholder="Number of Years">
         <button id="calculateInvestmentReturn">Calculate Return</button>
-        <p id="investmentResult"></p>
+        <p id="investmentResult" class="result"></p>
     </div>
 
     <script type="module" src="main.js"></script>
 </body>
 </html>
+
