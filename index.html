@@ -1,0 +1,37 @@
+<!--U35346496-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator</title>
+</head>
+<body>
+    <h1>Financial Calculator</h1>
+    <div class="calculator">
+        <h2>Interest Rate Calculation</h2>
+        <input type="number" id="interestPrincipal" placeholder="Principal">
+        <input type="number" id="interestRate" placeholder="Rate">
+        <input type="number" id="interestTime" placeholder="Time">
+        <button id="calculateInterest">Calculate Interest</button>
+        <p id="interestResult"></p>
+
+        <h2>Loan Payment Calculation</h2>
+        <input type="number" id="loanPrincipal" placeholder="Principal">
+        <input type="number" id="loanRate" placeholder="Annual Rate">
+        <input type="number" id="loanNumberOfPayments" placeholder="Number of Payments">
+        <button id="calculateLoanPayment">Calculate Payment</button>
+        <p id="loanResult"></p>
+
+        <h2>Investment Return Calculation</h2>
+        <input type="number" id="investmentPrincipal" placeholder="Principal">
+        <input type="number" id="investmentRate" placeholder="Annual Rate">
+        <input type="number" id="investmentTimesCompounded" placeholder="Times Compounded per Year">
+        <input type="number" id="investmentYears" placeholder="Number of Years">
+        <button id="calculateInvestmentReturn">Calculate Return</button>
+        <p id="investmentResult"></p>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
